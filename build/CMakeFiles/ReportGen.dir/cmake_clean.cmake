@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ReportGen.dir/Main.cpp.obj"
-  "CMakeFiles/ReportGen.dir/Main.cpp.obj.d"
-  "ReportGen.exe"
-  "ReportGen.exe.manifest"
+  "CMakeFiles/ReportGen.dir/main.cpp.o"
+  "CMakeFiles/ReportGen.dir/main.cpp.o.d"
+  "ReportGen"
   "ReportGen.pdb"
-  "libReportGen.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,31 +4,30 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Data/Code/ReportGen
-BuildDirectory: C:/Data/Code/ReportGen/build
+SourceDirectory: /home/jadondutra/Code/SpecGen
+BuildDirectory: /home/jadondutra/Code/SpecGen/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: DESKTOP-8H54O6H
+Site: fedora
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-mingw32-make
+BuildName: Linux-g++
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
 SubmitURL: http://
-SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "C:/Data/Code/ReportGen"
-MakeCommand: C:/Program\ Files/Microsoft\ Visual\ Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "/usr/bin/cmake" "/home/jadondutra/Code/SpecGen"
+MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -45,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,13 +57,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
-Compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/x86_64-w64-mingw32-g++.exe
-CompilerVersion: 8.1.0
+Compiler: /usr/bin/g++
+CompilerVersion: 12.2.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -81,7 +80,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcov.exe
+CoverageCommand: /usr/bin/gcov
 CoverageExtraFlags: -l
 
 # Testing options
