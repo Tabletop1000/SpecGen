@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ReportGen.dir/main.cpp.o"
   "CMakeFiles/ReportGen.dir/main.cpp.o.d"
+  "CMakeFiles/ReportGen.dir/src/actuators.cpp.o"
+  "CMakeFiles/ReportGen.dir/src/actuators.cpp.o.d"
   "ReportGen"
   "ReportGen.pdb"
 )

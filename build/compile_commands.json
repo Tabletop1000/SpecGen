@@ -1,7 +1,12 @@
 [
 {
   "directory": "/home/jadondutra/Code/SpecGen/build",
-  "command": "/usr/bin/clang++   -g -o CMakeFiles/ReportGen.dir/main.cpp.o -c /home/jadondutra/Code/SpecGen/main.cpp",
+  "command": "/usr/bin/clang++  -I/home/jadondutra/Code/SpecGen/src -I/home/jadondutra/Code/SpecGen/include -g -o CMakeFiles/ReportGen.dir/main.cpp.o -c /home/jadondutra/Code/SpecGen/main.cpp",
   "file": "/home/jadondutra/Code/SpecGen/main.cpp"
+},
+{
+  "directory": "/home/jadondutra/Code/SpecGen/build",
+  "command": "/usr/bin/clang++  -I/home/jadondutra/Code/SpecGen/src -I/home/jadondutra/Code/SpecGen/include -g -o CMakeFiles/ReportGen.dir/src/actuators.cpp.o -c /home/jadondutra/Code/SpecGen/src/actuators.cpp",
+  "file": "/home/jadondutra/Code/SpecGen/src/actuators.cpp"
 }
 ]

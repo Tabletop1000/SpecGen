@@ -11,16 +11,17 @@ BuildDirectory: /home/jadondutra/Code/SpecGen/build
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: fedora
+Site: 2403-5801-5866--b27d-e9f4-26e6-78e3.ip6.aussiebb.net
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-g++
+BuildName: Linux-clang++
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
 SubmitURL: http://
+SubmitInactivityTimeout: 
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
@@ -62,8 +63,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /usr/bin/g++
-CompilerVersion: 12.2.1
+Compiler: /usr/bin/clang++
+CompilerVersion: 14.0.5
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
