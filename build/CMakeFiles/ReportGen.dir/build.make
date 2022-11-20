@@ -108,6 +108,8 @@ ReportGen_EXTERNAL_OBJECTS =
 ReportGen: CMakeFiles/ReportGen.dir/main.cpp.o
 ReportGen: CMakeFiles/ReportGen.dir/src/actuators.cpp.o
 ReportGen: CMakeFiles/ReportGen.dir/build.make
+ReportGen: include/matplotplusplus/source/matplot/libmatplot.a
+ReportGen: include/matplotplusplus/source/3rd_party/libnodesoup.a
 ReportGen: CMakeFiles/ReportGen.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jadondutra/Code/SpecGen/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ReportGen"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ReportGen.dir/link.txt --verbose=$(VERBOSE)

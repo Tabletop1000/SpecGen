@@ -523,6 +523,32 @@ ReportGen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ReportGen.dir/build.make CMakeFiles/ReportGen.dir/build
 .PHONY : ReportGen/fast
 
+#=============================================================================
+# Target rules for targets named nodesoup
+
+# Build rule for target.
+nodesoup: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nodesoup
+.PHONY : nodesoup
+
+# fast build rule for target.
+nodesoup/fast:
+	$(MAKE) $(MAKESILENT) -f include/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir/build.make include/matplotplusplus/source/3rd_party/CMakeFiles/nodesoup.dir/build
+.PHONY : nodesoup/fast
+
+#=============================================================================
+# Target rules for targets named matplot
+
+# Build rule for target.
+matplot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 matplot
+.PHONY : matplot
+
+# fast build rule for target.
+matplot/fast:
+	$(MAKE) $(MAKESILENT) -f include/matplotplusplus/source/matplot/CMakeFiles/matplot.dir/build.make include/matplotplusplus/source/matplot/CMakeFiles/matplot.dir/build
+.PHONY : matplot/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -611,6 +637,8 @@ help:
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
 	@echo "... ReportGen"
+	@echo "... matplot"
+	@echo "... nodesoup"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

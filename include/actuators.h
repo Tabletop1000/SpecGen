@@ -6,9 +6,8 @@
 #define ACTUATORS_H
 
 // defines
-#define pi 3.14159
+//#define pi 3.14159
 #define g  9.81
-
 
 // Typedeffs
 typedef enum SG_error_t{
@@ -24,7 +23,7 @@ typedef enum actuator_type_t{
 typedef struct FBD_forces_t{
     float F_gx;
     float F_fric;
-    float F_a;
+    float F_i;
     float F_net;
 }FBD_forces_t;
 

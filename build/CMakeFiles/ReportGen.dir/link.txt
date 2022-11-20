@@ -1,1 +1,1 @@
-/usr/bin/clang++ -g -rdynamic CMakeFiles/ReportGen.dir/main.cpp.o CMakeFiles/ReportGen.dir/src/actuators.cpp.o -o ReportGen 
+/usr/bin/clang++ -g -rdynamic CMakeFiles/ReportGen.dir/main.cpp.o CMakeFiles/ReportGen.dir/src/actuators.cpp.o -o ReportGen  include/matplotplusplus/source/matplot/libmatplot.a include/matplotplusplus/source/3rd_party/libnodesoup.a 
