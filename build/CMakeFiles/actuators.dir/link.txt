@@ -1,0 +1,2 @@
+/usr/bin/llvm-ar qc libactuators.a CMakeFiles/actuators.dir/src/actuators.cpp.o
+/usr/bin/llvm-ranlib libactuators.a

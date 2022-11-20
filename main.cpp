@@ -8,14 +8,32 @@ using namespace std;
 const char* fp = "../Data/spec-report.tex";    
 
 int main() {
+    cout << "Starting Report generator\n";
     
-    actuator_inputs_t config;
-    actuator_requirements_t ar;
-    calculate_actuator(config, &ar);
-    cout << "Actuator velocity = " << ar.a_velocity << endl;
+    robot_requirements_t req;
+    req.acceleration_time = 2.00;
+    req.friction_coefficient = 0.400;
+    req.ground_slope = rads(40);
+    req.mass = 5.00/g;
+    req.max_vel = 3.00;             // m/s
+    req.wheel_diameter = 0.120;  // 12 cm
+    
+    FBD_forces_t fr;
+    calculate_FBD_forces(req, &fr);
+
+    cout << "Pull force = " << fr.F_gx << " N" << endl;
+    cout << "Friction force = " << fr.F_fric << " N" << endl;
+    cout << "Acceleration force = " << fr.F_a << " N" << endl;
+    cout << "Motor Forces = " << fr.F_net << " N" << endl;
+
+    motor_specification_t ms;
+    wheel_motor_specification(req,fr, &ms);
+
+    cout << endl;
+    cout << "Wheel torque demand = " << kg_cm(ms.stall_torque)<< " kg-cm" << endl;
+    cout << "Wheel speed demand = " << rpm(ms.angular_velocity) << " RPM" << endl;
 
 
-    // cout << "Starting Report generator\n";
 
     // cout << "File path: ${workspaceFolder}\n";
     // ofstream myfile;
